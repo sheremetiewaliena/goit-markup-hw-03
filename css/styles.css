@@ -21,8 +21,35 @@ a {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
 }
 /*header*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.header-nav {
+  display: flex;
+}
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .header-logo {
   color: var(--color-iris);
   font-family: 'Raleway', sans-serif;
@@ -37,6 +64,7 @@ ul {
   text-transform: uppercase;
 }
 .header-link {
+  padding: 24px 0;
   color: var(--color-navy-blue);
   line-height: 1.5;
 }
@@ -46,6 +74,8 @@ ul {
 }
 .address {
   font-style: normal;
+  display: flex;
+  gap: 40px;
 }
 .address-link:hover,
 .address-link:focus {
@@ -57,17 +87,29 @@ ul {
   font-size: 16px;
   line-height: 1.5;
 }
+.section {
+  padding: 120px 0;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 156px;
+}
 /* hero */
 .hero-section {
   background-color: var(--color-navy-blue);
+  padding: 188px 0;
 }
 .hero-text {
+  max-width: 496px;
+  margin: 0 auto;
   color: var(--color-white);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 1.12px;
+  margin-bottom: 48px;
 }
 
 .hero-button:hover,
@@ -91,6 +133,7 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 .benefits-text {
   color: var(--color-slate);
@@ -106,6 +149,7 @@ ul {
   text-align: center;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .our-team-color {
   background-color: var(--color-cloud);
@@ -140,6 +184,7 @@ ul {
   letter-spacing: 0.72px;
   background-color: var(--color-cloud);
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .our-portfolio-color {
   background-color: inherit;
